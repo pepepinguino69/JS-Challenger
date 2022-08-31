@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#element{width:50px;height: 50px;border: 2px red solid;}
+.flex{display: flex;justify-content: space-around;align-items: center;height:50px;width:90vh;border: 3px black solid}
+#limit{height: 500px;width: 10px;border: 2px black solid;background-color: blue;}
+</style>
+<body>
+
+    <input type="text" id="firstName" placeholder="Max" value="Max"/>
+<input type="text" id="lastName" placeholder="Musterman" value="Musterman"/>
+<input type="text" id="fullName" placeholder="full name" readonly/>
+<button type="button" id="button">Verify Code</button>
+
+    
+</body>
+
+
+
+
+
+<script>
+
+const button = document.getElementById('button');
+button.addEventListener('click' , () => {
+  // type in your code here
+const name =document.querySelector('#firstName').value
+const surname =document.querySelector('#lastName').value 
+fullName=name+' '+surname
+updated =document.querySelector('#fullName').value=fullName
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+</html>
